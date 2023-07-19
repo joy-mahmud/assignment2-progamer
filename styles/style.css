@@ -188,6 +188,7 @@ ul li:last-child {
     font-weight: 500;
 }
 
+
 .play-games {
     display: flex;
     justify-content: space-between;
@@ -433,4 +434,106 @@ footer{
     }
 
 
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-container {
+        margin-bottom: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    nav ul li {
+        margin-bottom: 50px;
+    }
+
+    nav ul:last-child {
+        margin-bottom: 0px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        margin-top: 50px;
+    }
+
+    .banner-img {
+        width: calc(100% - 40px);
+        margin: 0px 20px;
+    }
+
+    .online-game-card {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-card-content {
+        width: calc(100% - 40px);
+        margin: 20px 20px;
+    }
+
+    .game-card-img {
+        width: 100%;
+    }
+
+    .online-game-content {
+        text-align: center;
+        margin: 0px 20px;
+    }
+
+    .online-game-contennt-head {
+        font-size: 35px;
+    }
+
+    .online-game-funny-vid {
+        font-size: 35px;
+    }
+    .play-games {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 30px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .play-games-big-img {
+        width: calc(90% - 50px);
+    }
+    .play-games-small-img {
+        width: 20vw;
+        height: 70%;
+        position:relative;
+        right: 12%;
+        top:220px;
+    }
+    .play-game-description{
+        margin-bottom: 50px;
+    }
+    .features{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px;
+        margin-left:30px;
+    }
+    .feuture-margin-left{
+        margin:0;
+    }
+    .footer{
+        width:100%;
+    }
+
+  
 }
