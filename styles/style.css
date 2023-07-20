@@ -269,10 +269,14 @@ ul li:last-child {
     margin-top: 20px;
 }
 
-.features{
+.feature-content1{
     display:grid;
     grid-template-columns: repeat(5, 1fr);
     gap:20px;
+}
+.feature-content2{
+    display:flex;
+    justify-content: space-around;
 }
 .featues-content{
     display: flex;
@@ -437,11 +441,14 @@ footer{
     .play-game-description{
         margin-bottom: 50px;
     }
-    .features{
+    .feature-content2{
         display:grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap:10px;
-        margin:10px;
+        margin:5px;
+    }
+    .feature-content1{
+        display:none;
     }
     .feuture-margin-left{
         margin:0;
@@ -569,10 +576,14 @@ footer{
     .play-game-description{
         margin-bottom: 50px;
     }
-    .features{
+    .feature-content2{
         display:grid;
-        grid-template-columns: repeat(3, 1fr);
-
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+        margin:5px;
+    }
+    .feature-content1{
+        display:none;
     }
     .feuture-margin-left{
         margin:0;
