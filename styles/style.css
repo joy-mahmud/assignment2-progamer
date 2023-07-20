@@ -283,6 +283,7 @@ ul li:last-child {
     align-items: center;
     gap:5px; 
     padding:3px;
+    border:2px solid transparent;
 }
 .featues-content:hover{
     border: 2px solid palevioletred;
