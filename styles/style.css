@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
 
 /* shared styles */
 .small-txt{
@@ -11,7 +17,7 @@
 }
 
 .main-margin {
-    margin: 0px 12.5%;
+    margin: 0px 10.5%;
 }
 
 button .icon-height {
@@ -175,6 +181,32 @@ ul li:last-child {
 
 .game-card-content {
     width: 17.81vw;
+    position:relative;
+}
+.play-now{
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 75%;
+    top:0;
+    left:0;
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+}
+.play-now:hover{
+    opacity: 1;
+    transition:.6s;
+}
+.play-now-btn{
+    background-color: #4EC5F7;
+    border-radius:8px;
+    padding:10px 20px;
+    border:none;
 }
 
 .game-card-img {
@@ -206,8 +238,8 @@ ul li:last-child {
 }
 
 .play-games-small-img {
-    width: 15vw;
-    height: 60%;
+    width: 16vw;
+    height: 57%;
     position: relative;
     right: 15%;
     top: 65%;
@@ -296,10 +328,12 @@ footer{
     justify-content: space-around;
     margin-bottom: 30px;
 }
-.apple{
-   color: white;
-   width:24px;
-   height:24px;
+.footer-img{
+    height:30px;
+    width:30px;
+}
+.youtube-foot{
+    width:40px;
 }
 
 
@@ -388,6 +422,9 @@ footer{
         right: 12%;
         top:220px;
     }
+    .play-now{
+        height:83%
+    }
     .play-game-description{
         margin-bottom: 50px;
     }
@@ -436,7 +473,7 @@ footer{
 
 }
 
-@media screen and (min-width:425px) and (max-width:768px) {
+@media screen and (min-width:426px) and (max-width:768px) {
     .nav {
         display: flex;
         flex-direction: column;
@@ -519,6 +556,9 @@ footer{
         right: 12%;
         top:220px;
     }
+    .play-now{
+        height:81.5%
+    }
     .play-game-description{
         margin-bottom: 50px;
     }
@@ -526,13 +566,15 @@ footer{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         gap:10px;
-        margin-left:30px;
+        margin-left:5px;
     }
     .feuture-margin-left{
         margin:0;
     }
+    footer
     .footer{
         width:100%;
+        margin: 0;
     }
 
   
